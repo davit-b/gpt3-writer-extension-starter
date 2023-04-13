@@ -79,6 +79,7 @@ function sendMessage(content) {
       activeTab,
       { message: 'inject', content },
       (response) => {
+        console.log(response)
         if (response.status === 'failed') {
           console.log('injection failed.');
         }
